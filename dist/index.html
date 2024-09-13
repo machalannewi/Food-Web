@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="text-gray-600">
+
+  <div class="grid md:grid-cols-3">
+    <div class="md:col-span-1 md:flex md:justify-end">
+      <nav>
+        <div class="flex justify-between items-center">
+          <h1 class="font-bold uppercase p-4 border-b border-gray-200 hover:text-gray-500">
+            <a href="/">Food Web</a>
+          </h1>
+          <i class="fa-solid fa-bars w-8 text-lg md:hidden cursor-pointer" id="hamburger"></i>
+          <i class="fa-solid fa-xmark w-8 cursor-pointer text-lg hidden" id="xmark"></i>
+        </div>
+        <ul class="hidden md:block" id="menu">
+          <li class="text-gray-700 font-bold py-1">
+            <a href="#" class="flex justify-end place-items-center px-5 border-r-4 border-primary text-sm">
+              <span>Home</span>
+              <i class="fa-solid fa-house ml-2"></i>
+            </a>
+          </li>
+          <li class="py-1">
+            <a href="#" class="flex justify-end place-items-center px-5 text-sm border-r-4 border-white">
+              <span>About</span>
+              <i class="fa-regular fa-address-card ml-2"></i>
+            </a>
+          </li>
+          <li class="py-1">
+            <a href="#" class="flex justify-end place-items-center px-5 border-r-4 border-white text-sm">
+              <span>Contact</span>
+              <i class="fa-regular fa-envelope ml-2"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+    <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+      <div class="flex justify-center md:justify-end">
+        <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log in</a>
+        <a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sign up</a>
+      </div>
+
+
+
+      <header>
+        <h2 class="text-gray-700 text-6xl font-semibold font-body">Recipes</h2>
+        <h3 class="text-2xl">For Foodies</h3>
+      </header>
+ 
+      <div>
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+  
+        <div class="mt-8 grid lg:grid-cols-3 gap-10">
+          <!-- cards go here -->
+          <div class="card"> 
+            <img class="w-full h-32 sm:h-48 object-cover" src="img/food.jpeg" alt="food">
+            <div class="m-4">
+              <span class="font-bold">Rice and Chicken</span>
+              <span class="block text-gray-500 text-sm">Recipe by Voyage</span>
+            </div>
+            <div class="badge">
+              <i class="fa-regular fa-clock"></i>
+              <span>25 Mins</span>
+            </div>
+          </div>
+          <div class="card"> 
+            <img class="w-full h-32 sm:h-48 object-cover" src="img/swallow.jpeg" alt="swallow">
+            <div class="m-4">
+              <span class="font-bold">Fufu and Egusi</span>
+              <span class="block text-gray-500 text-sm">Recipe by Voyage</span>
+            </div>
+            <div class="badge">
+              <i class="fa-regular fa-clock"></i>
+              <span>25 Mins</span>
+            </div>
+          </div>
+          <div class="card"> 
+            <img class="w-full h-32 sm:h-48 object-cover" src="img/variety.jpeg" alt="variety">
+            <div class="m-4">
+              <span class="font-bold">Variety dishes</span>
+              <span class="block text-gray-500 text-sm">Recipe by Voyage</span>
+            </div>
+            <div class="badge">
+              <i class="fa-regular fa-clock"></i>
+              <span>25 Mins</span>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+
+        <div class="mt-8">
+          <!-- cards go here -->
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:opacity-50 transition ease-out duration-300">Load more</div>
+      </div>    
+    </main>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
